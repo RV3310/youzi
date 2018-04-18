@@ -5,9 +5,11 @@ var ww = $(window).width();
 
 $(window).resize(function() { 
 	if ($(window).width() < 650) { 
-		$(".topics").hide(); 
+		$(".main-nav").hide(); 
+    $(".menu").show();
 	} else { 
-		$(".topics").show();
+		$(".main-nav").show();
+    $(".menu").hide();
 } 
 })
 
@@ -16,7 +18,7 @@ $(window).resize(function() {
     event.preventDefault();
     $(".overlay").toggleClass("open");
     $(".menu").toggleClass("open");
-    $(".lp-text").toggleClass("hidden");
+    $(".landing-page-intro").toggleClass("hidden");
   });
 
 

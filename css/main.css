@@ -51,9 +51,14 @@ li {
 }
 
 h1, 
-h1 + span {
+h1 + span,
+.main-nav ul li a {
   color: #fff;
   font-family: 'Josefin Sans', sans-serif;
+}
+
+.main-nav ul li {
+  border: none;
 }
 
 h1 + span {
@@ -208,9 +213,8 @@ KEYFRAMES
           transform: translateY(-7px) translateY(50%) rotate(-45deg);
 }
   
-  .main-nav,
-  .topics {
-    display: none;
+  .main-nav{
+    visibility: hidden;
   }
 
 .overlay {
@@ -225,8 +229,8 @@ KEYFRAMES
   transition: opacity 0.2s ease-in-out;
   z-index: 1;
   opacity: 0;
-/*  visibility: hidden;
-*/  display: -webkit-box;
+  visibility: hidden;
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
@@ -251,17 +255,17 @@ KEYFRAMES
 
 .overlay.open {
   opacity: 1;
-/*  visibility: visible;
-*/}
+  visibility: visible;
+}
 
 
-.lp-text {
+.landing-page-intro {
   width: 100%;
   position:absolute;
   top:28%;
   }
 
-  .lp-text p {
+  .landing-page-intro p {
     max-width: 80%;
     margin: 0 auto;
     font-size: 14px;
@@ -279,6 +283,42 @@ footer {
 MEDIA QUERY
 ************************************/
 
+@media screen and ( min-width: 650px) {
+  .menu {
+    display: none;
+  }
 
+  .main-nav {
+    visibility: visible;
+    justify-content: space-between;
+    margin-top: 40px;
+    width: 100%;
+  }
+
+   .main-nav a {
+    font-size: 25px;
+
+   }
+
+   h1 {  
+       font-size: 90px;
+  }
+
+  h1 + span {
+    font-size: 40px;
+  }
+
+.landing-page-intro p { 
+    font-size: 25px;
+    margin-top: 40px;
+   }
+
+footer { 
+  font-size: 30px; 
+}
+
+  
+
+}
   
   
