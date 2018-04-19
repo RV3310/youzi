@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>How Many Units?</title>
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			 <meta charset='utf-8'>
+			<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+			<link rel="stylesheet" type="text/css" href="css/normalize.css">
+			<link rel="stylesheet" type="text/css" href="css/styles_hm.css">
+		</head>
+
+		<body>
+			<div class="container">
+  				<h1>The <span class="subject"></span> Quiz!</h1>
+  				<h2>How many <span class="detailed-subject"></span> can you name in <span class="time-limit"></span>?</h2>
+  				
+  				<div class="side">
+	    			<div class="toast neutral-toast"></div>
+	  			</div>
+  
+  				<div class="main">
+	    			<button type="button" class="start">Ready? Click here to start!</button>
+		    		<div class="started">
+		      			<input type="text" class="input">
+			      		<div class="status">
+			        	<div class="status-timer">Time remaining: <span class="time-remaining"></span></div>
+			        	<div class="status-current-score">Current score: <span class="score"></span> out of <span class="total"></span></div>
+			        	<div class="status-final-results">
+			          	<span class="end-greeting"></span>You got <span class="score"></span> out of <span class="total"></span>. That's <span class="percent"></span>%!
+			        	</div>
+        
+		        		<div class="status-toggle-answers">
+		          		(<a href="#" class="toggle">see what you missed</a>)
+		        		</div>
+  						</div>
+      		
+			      		<ul class="answers scored-answers"></ul>
+			      		<ul class="answers missed-answers"></ul>
+			      		<div class="footnote">
+			        	Thanks for playing!<a href="#" class="reset"> Play again</a>?
+	      				</div>
+    				</div>
+  				</div>
+			</div>
+		</body>
+        
+        <script src="../js/jquery-2.1.3.js"></script>
+		<script src="js/jscript_hm.js"></script>
+
+	</html>

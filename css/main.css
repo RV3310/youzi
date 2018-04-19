@@ -134,20 +134,16 @@ KEYFRAMES
   HEADER STYLES
   ******************************/
 
-  menu {
-  position: absolute;
-  top: 1.6rem;
-  left: 10%;
-  height: 10%;
-  width: 10%;
+header {
+  margin-bottom: 150px;
 }
 
 .menu {
   position: absolute;
   top: 30px;
   left:6%;
-  height: 25%;
-  width: 25%;
+  height: 30px;
+  width: 30px;
 }
 
 .menu-link {
@@ -172,7 +168,7 @@ KEYFRAMES
 
 .burger-bar {
   background-color: #fff;
-  height: .2rem;
+  height: 3.2px;
   width: 100%;
   border-radius: 2px;
   position: absolute;
@@ -197,9 +193,9 @@ KEYFRAMES
 
 .menu.open .burger-bar-1 {
   background-color: #864fe1;
-  -webkit-transform: translateY(7px) translateY(-50%) rotate(45deg);
-      -ms-transform: translateY(7px) translateY(-50%) rotate(45deg);
-          transform: translateY(7px) translateY(-50%) rotate(45deg);
+  -webkit-transform: translateY(10px) translateY(-50%) rotate(45deg);
+      -ms-transform: translateY(10px) translateY(-50%) rotate(45deg);
+          transform: translateY(10px) translateY(-50%) rotate(45deg);
 }
 
 .menu.open .burger-bar-2 {
@@ -208,9 +204,9 @@ KEYFRAMES
 
 .menu.open .burger-bar-3 {
     background-color: #864fe1;
-  -webkit-transform: translateY(-7px) translateY(50%) rotate(-45deg);
-      -ms-transform: translateY(-7px) translateY(50%) rotate(-45deg);
-          transform: translateY(-7px) translateY(50%) rotate(-45deg);
+  -webkit-transform: translateY(-10px) translateY(50%) rotate(-45deg);
+      -ms-transform: translateY(-10px) translateY(50%) rotate(-45deg);
+          transform: translateY(-10px) translateY(50%) rotate(-45deg);
 }
   
   .main-nav{
@@ -258,11 +254,18 @@ KEYFRAMES
   visibility: visible;
 }
 
+.wrapper {
+ /* position: absolute;
+  top: 28%;*/
+  margin-top: 40%;
+  width: 900px;
+  margin: 0 auto;
+  max-width: 90%;
+}
+
 
 .landing-page-intro {
   width: 100%;
-  position:absolute;
-  top:28%;
   }
 
   .landing-page-intro p {
@@ -272,11 +275,11 @@ KEYFRAMES
   }
 
 footer {
-  position: fixed;
-  bottom: 10px;
+  margin: 90px 0 10px;
   color: #fff;
   text-align: center;
   width: 100%;
+  font-size: 15px;
 }
 
 /***********************************
@@ -284,21 +287,42 @@ MEDIA QUERY
 ************************************/
 
 @media screen and ( min-width: 650px) {
-  .menu {
-    display: none;
-  }
 
-  .main-nav {
-    visibility: visible;
-    justify-content: space-between;
-    margin-top: 40px;
-    width: 100%;
-  }
-
-   .main-nav a {
-    font-size: 25px;
-
+  .menu { 
+    height: 40px;
+    width: 40px;
    }
+
+   .burger-icon {
+    height: 40px;
+    width: 50px;
+   }
+
+   .burger-bar {
+    height: 5px;
+   }
+
+   .menu.open .burger-bar-1 {
+  background-color: #864fe1;
+  -webkit-transform: translateY(18px) translateY(-50%) rotate(45deg);
+      -ms-transform: translateY(18px) translateY(-50%) rotate(45deg);
+          transform: translateY(18px) translateY(-50%) rotate(45deg);
+}
+
+.menu.open .burger-bar-3 {
+    background-color: #864fe1;
+  -webkit-transform: translateY(-18px) translateY(50%) rotate(-45deg);
+      -ms-transform: translateY(-18px) translateY(50%) rotate(-45deg);
+          transform: translateY(-18px) translateY(50%) rotate(-45deg);
+}
+
+.overlay li {
+  border: 3px solid indigo;
+}
+
+h3 .links {
+  font-size: 30px;
+}
 
    h1 {  
        font-size: 90px;
@@ -315,8 +339,47 @@ MEDIA QUERY
 
 footer { 
   font-size: 30px; 
+  margin-top: 180px;
+}
 }
 
+@media screen and (min-width: 1024px) {
+
+  header {
+    margin-bottom: 150px;
+  }
+
+    .menu {
+    display: none;
+  }
+
+  .main-nav {
+    visibility: visible;
+    justify-content: space-between;
+    margin-top: 50px;
+    width: 100%;
+  }
+
+   .main-nav a {
+    font-size: 25px;
+
+   }
+
+  h1 {
+    font-size: 100px
+  }
+
+  .landing-page-intro p {
+    font-size: 30px;
+    margin-top: 50px;
+  }
+
+   footer { 
+  font-size: 30px; 
+  margin-top: 150px;
+}
+  }
+}
   
 
 }

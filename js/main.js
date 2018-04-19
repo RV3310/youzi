@@ -4,7 +4,7 @@ var ww = $(window).width();
 
 
 $(window).resize(function() { 
-	if ($(window).width() < 650) { 
+	if ($(window).width() < 1024) { 
 		$(".main-nav").hide(); 
     $(".menu").show();
 	} else { 
