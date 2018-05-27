@@ -1,15 +1,19 @@
 $(document).ready(function() {
 // shown in the header text
-var QUIZ_SUBJECT = 'Materials & Waves';
+var QUIZ_SUBJECT = '20th Century Physicists';
 
 // shown in the sub-header text
-var QUIZ_DETAILED_SUBJECT = 'materials & waves properties';
+var QUIZ_DETAILED_SUBJECT = '20th century physicists';
 
 // the time limit, in minutes
-var QUIZ_TIME_LIMIT = 1;
+var QUIZ_TIME_LIMIT = 3;
 
 // array of all the correct answers
-var QUIZ_ANSWERS = ['strong', 'ductile', 'brittle', 'plastic', ' malleable', 'elastic', 'tough', 'wavelength', 'frequency', 'amplitude', 'phase', 'time period', 'speed', 'energy'];
+// var QUIZ_ANSWERS = ['strong', 'ductile', 'brittle', 'plastic', ' malleable', 'elastic', 'tough', 'wavelength', 'frequency', 'amplitude', 'phase', 'time period', 'speed', 'energy'];
+
+
+
+var QUIZ_ANSWERS = [' sagan', 'bohr', 'einstein', 'meitner', 'hawking', 'curie', 'oppenheimer', 'ride', 'fermi', 'dirac', 'thorne', 'sarabhai', 'teller', 'chandrasek', 'fuchs', 'salam', 'kuhn', 'pauli', 'chu', 'landau', 'gell mann', 'wigner', 'higgs', 'goeppert mayaer', 'chang diaz', 'yukawa', 'bell burnell', 'meitner', 'noether', 'franklin', 'shilling', 'jackson', 'green', 'maynard daly', 'johnson', 'frazier'];
 
 /*
 
